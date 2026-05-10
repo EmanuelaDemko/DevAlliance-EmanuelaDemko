@@ -1,0 +1,54 @@
+/* ---------- Contact Page Layout ---------- */
+.contact-page {
+  padding: 3rem 0;
+}
+
+/* ---------- Form Wrapper ---------- */
+.contact-form-wrapper {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2.5rem;
+}
+
+/* ---------- Contact Info Panel ---------- */
+.contact-info {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  color: white;
+  height: 100%;
+}
+
+.contact-info h3 {
+  color: var(--color-cream);
+}
+
+.contact-info i {
+  font-size: 1.3rem;
+  margin-right: 0.75rem;
+  color: var(--color-secondary-light);
+}
+
+/* ---------- Validation ---------- */
+.validation-error {
+  color: var(--color-danger);
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: none;
+}
+
+.form-control.is-invalid + .validation-error {
+  display: block;
+}
+
+#formAlert {
+  display: none;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .contact-info {
+    margin-bottom: 1.5rem;
+  }
+}

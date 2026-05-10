@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Everywhere Library - Home</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="fas fa-book-open me-2"></i>My Everywhere Library
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="books.html">My Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero-section">
+    <div class="container">
+      <h1><i class="fas fa-book-reader me-3"></i>Your Personal Book Tracker</h1>
+      <p>Keep track of every book you read, want to read, or left behind. Your library, everywhere you go.</p>
+      <a href="books.html" class="btn btn-light btn-lg">
+        <i class="fas fa-arrow-right me-2"></i>Browse My Books
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== Stats Cards ===== -->
+  <section class="container my-5">
+    <h2 class="section-title">Library Overview</h2>
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="stat-card total">
+          <div class="stat-icon"><i class="fas fa-book"></i></div>
+          <div class="stat-number" id="statTotal">0</div>
+          <div class="stat-label">Total Books</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card reading">
+          <div class="stat-icon"><i class="fas fa-bookmark"></i></div>
+          <div class="stat-number" id="statReading">0</div>
+          <div class="stat-label">Reading</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card read">
+          <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+          <div class="stat-number" id="statRead">0</div>
+          <div class="stat-label">Completed</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card tbr">
+          <div class="stat-icon"><i class="fas fa-clock"></i></div>
+          <div class="stat-number" id="statTbr">0</div>
+          <div class="stat-label">To Be Read</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Featured Books ===== -->
+  <section class="featured-section">
+    <div class="container">
+      <h2 class="section-title">Featured Books</h2>
+      <div class="row" id="featuredBooks">
+        <!-- Populated by JavaScript -->
+      </div>
+      <div class="text-center mt-3">
+        <a href="books.html" class="btn btn-primary-custom">
+          <i class="fas fa-list me-2"></i>View All Books
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5><i class="fas fa-book-open me-2"></i>My Everywhere Library</h5>
+          <p class="small">Track your reading journey. Your personal book companion.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">My Books</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Student Project</h5>
+          <p class="small">Created by Emanuela Demko<br>DevAlliance Training 2026</p>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center mb-0">&copy; 2026 My Everywhere Library. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/utils.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

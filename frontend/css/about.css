@@ -1,0 +1,49 @@
+/* ---------- About Page Layout ---------- */
+.about-page {
+  padding: 3rem 0;
+}
+
+/* ---------- Feature Items ---------- */
+.feature-item {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform var(--transition);
+  height: 100%;
+}
+
+.feature-item:hover {
+  transform: translateY(-4px);
+}
+
+.feature-item i {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+/* ---------- How-To Section ---------- */
+.how-to-section {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.step-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}

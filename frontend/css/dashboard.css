@@ -1,0 +1,94 @@
+/* ---------- Hero Section ---------- */
+.hero-section {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  color: var(--color-white);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  color: var(--color-cream);
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.hero-section .btn {
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* ---------- Stats Cards ---------- */
+.stat-card {
+  background: var(--color-white);
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.stat-card .stat-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card .stat-number {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: var(--font-heading);
+}
+
+.stat-card .stat-label {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-card.total .stat-icon   { color: var(--color-primary); }
+.stat-card.reading .stat-icon { color: var(--color-info); }
+.stat-card.read .stat-icon    { color: var(--color-primary-light); }
+.stat-card.tbr .stat-icon     { color: var(--color-warning); }
+
+/* ---------- Featured Section ---------- */
+.featured-section {
+  padding: 4rem 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .stat-card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,92 @@
+/* ---------- Book Card ---------- */
+.book-card {
+  background: var(--color-white);
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+  overflow: hidden;
+  height: 100%;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.book-card .card-body {
+  padding: 1.5rem;
+}
+
+.book-card .book-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.book-card .book-author {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+/* ---------- Status Badges ---------- */
+.badge-tbr {
+  background-color: var(--color-warning) !important;
+  color: #fff;
+}
+
+.badge-reading {
+  background-color: var(--color-info) !important;
+  color: #fff;
+}
+
+.badge-read {
+  background-color: var(--color-primary-light) !important;
+  color: #fff;
+}
+
+.badge-dnf {
+  background-color: var(--color-danger) !important;
+  color: #fff;
+}
+
+/* ---------- Star Rating ---------- */
+.star-rating {
+  color: #f1c40f;
+  font-size: 0.95rem;
+}
+
+.star-rating .empty {
+  color: #ccc;
+}
+
+/* ---------- Section Title ---------- */
+.section-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-secondary);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* ---------- Form Shared Styles ---------- */
+.form-label {
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--color-primary-light);
+  box-shadow: 0 0 0 0.2rem rgba(45, 80, 22, 0.15);
+}
